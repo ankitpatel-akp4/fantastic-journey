@@ -1,0 +1,51 @@
+<div>  
+    <dt>Name</dt>
+    <dd>{{Name}}</dd>
+</div>
+<div class="container-fluid">
+    <h2>Product details</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd>{{Name}}</dd>
+        <dt>Name</dt>
+        <dd>
+            <select name="" id="">
+                <option value="">{{Name}}</option>
+            </select>
+        </dd>
+        <dd><input type="checkbox" [checked]="Stock"></dd>
+    </dl>
+</div>
+<div class="container-fluid">
+    <h2>One way binding</h2>
+    <dl>
+        <dt>Username</dt>
+        <dd><input type="text" value="{{username}}"></dd>
+    </dl>
+    <h3>Hello! <span>{{username}}</span></h3>
+
+</div>
+
+<hr>
+
+<div>
+    <h2>Two way binding</h2>
+    <dl>
+        <dt>Username</dt>
+        <dd><input type="text" [(ngModel)]="username"></dd>
+    </dl>
+    <h3>Hello! <span [innerText]="username">{{username}}</span></h3>
+    <h3>Hello! <span>{{username}}</span></h3>
+
+</div>
+
+<hr>
+
+<div>
+    <h2>Fake Store API</h2>
+    <dl>
+        <dt>Title</dt>
+        <dd>{{Product.title}}</dd>
+    </dl>
+   
+</div>
