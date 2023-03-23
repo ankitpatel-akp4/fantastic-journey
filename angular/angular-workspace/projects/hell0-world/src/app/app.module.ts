@@ -14,7 +14,16 @@ import { FormsModule } from '@angular/forms';
 import { TwowaybindingComponent } from './components/twowaybinding/twowaybinding.component';
 @NgModule({
   declarations: [
-    AppComponent,HomeComponent,LoginComponent, RegisterComponent, NetflixindexComponent, NetflixheaderComponent, NetflixmainComponent, NetflixregiterComponent, DatabindingComponent, TwowaybindingComponent
+    AppComponent
+    ,HomeComponent
+    ,LoginComponent
+    , RegisterComponent
+    , NetflixindexComponent
+    , NetflixheaderComponent
+    , NetflixmainComponent
+    , NetflixregiterComponent
+    , DatabindingComponent
+    , TwowaybindingComponent
   ],
   imports: [
     BrowserModule,
