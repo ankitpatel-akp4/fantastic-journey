@@ -1,0 +1,111 @@
+:root {
+
+    --fs-xl: clamp(1rem, 2vw + .5rem, 3rem);
+    --fs-600: clamp(.8rem, 1vw + .4rem, 2rem);
+    --fs-400: clamp(.6rem, .5vw + .2rem, 1rem);
+  }
+  
+
+ 
+
+
+  
+  
+.kanban{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    background-color: #1d6456;
+    
+}
+
+.kanban * {
+    font-family: sans-serif;
+}
+
+.kanban__column {
+    flex: 1;
+}
+
+.kanban__column {
+    margin: 15px;
+}
+
+.kanban__column-title {
+    margin: 20px;
+    font-size: var(--fs-xl);
+    color: white;
+    user-select: none;
+}
+.input-wrapper{
+    display: flex;
+    
+}
+.fa-trash{
+    width: 0px;
+    margin: .2rem;
+    position: relative;
+    left: -20px;
+    cursor: pointer;
+    
+}
+.kanban__item-input {
+    
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+    font-size: var(--fs-600);
+    
+    
+}
+
+.fa-trash{
+    display: block;
+}
+
+
+.kanban__dropzone {
+    height: 10px;
+    transition: background .15s, height 0.15s;
+
+}
+
+.kanban__dropzone--active {
+    height: 20px;
+    background: rgba(0, 0, 0, .25);
+}
+
+.kanban__add-item {
+    width: 100%;
+    padding: 10px 0px;
+    font-size: var(--fs-600);
+    color: white;
+    background-color: rgba(0, 0, 0, .1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+[contenteditable=true]:empty:before{
+    content: attr(placeholder);
+    pointer-events: none;
+    display: block; /* For Firefox */
+  }
+
+
+  /* div[contenteditable=true] {
+    border: 1px dashed #AAA;
+    width: 290px;
+    padding: 5px;
+  } */
+@media (max-width: 650px) {
+    .kanban{
+        
+        grid-template-columns: 1fr;
+        
+        
+    }
+  }
+  
